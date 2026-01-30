@@ -9,10 +9,18 @@ function App() {
   return (
     <>
       <h1 className="text-blue-600 dark:text-sky-400 border-2 p-4 rounded-xl">
-        Hello Tailwind with Vite + React!
+        Hello Tailwind with Vite + React!--Updating again!
+        {new Date().toLocaleString("en-US", {
+          month: "2-digit",
+          day: "2-digit",
+          year: "numeric",
+          hour: "2-digit",
+          minute: "2-digit",
+          second: "2-digit",
+        })}
       </h1>
       <div className="max-w-sm bg-white border border-gray-200 rounded-xl shadow dark:bg-gray-800 dark:border-gray-700">
-        <img className="rounded-t-lg" src={goalsImage} alt=""  />
+        <img className="rounded-t-lg" src={goalsImage} alt="" />
         <div className="p-5">
           <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
             Vite + React + TailwindCSS
